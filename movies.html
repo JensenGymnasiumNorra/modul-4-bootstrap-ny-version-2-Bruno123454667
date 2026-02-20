@@ -9,37 +9,82 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">MyMedia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="series.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="music.html">Music</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <p>Film 1</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
-
-      <p>Film 2</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
-
-      <p>Film 3</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+    <main class="py-5">
+      <div class="container">
+        <h1 class="mb-5">Movies</h1>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Johan Falk "Slutet"</h5>
+                <p class="card-text">
+                  <strong>Utgivningsår:2015</strong><br>
+                  <strong>Skådespelare:Jacob Eklund</strong><br>
+                  <strong>Genre:Thriller</strong>
+                </p>
+                <a href="#http://imdb.com/title/tt4815716/" class="btn btn-sm btn-danger">IMDB-länk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Johan Falk "Ur askan i elden"</h5>
+                <p class="card-text">
+                  <strong>Utgivningsår:2015</strong><br>
+                  <strong>Skådespelare:Jacob Eklund</strong><br>
+                  <strong>Genre:Thriller</strong>
+                </p>
+                <a href="#https://www.imdb.com/title/tt3775742/" class="btn btn-sm btn-danger">IMDB-länk</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Johan Falk "Spelets regler"</h5>
+                <p class="card-text">
+                  <strong>Utgivningsår:2012</strong><br>
+                  <strong>Skådespelare:Jacob Eklund</strong><br>
+                  <strong>Genre:Thriller</strong>
+                </p>
+                <a href="#https://www.imdb.com/title/tt2239100/" class="btn btn-sm btn-danger">IMDB-länk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>© 2026</p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 MyMedia. All rights reserved.</p>
+      </div>
     </footer>
     <script src="init.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
